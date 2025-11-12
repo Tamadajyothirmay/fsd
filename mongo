@@ -8,8 +8,8 @@ async function run() {
     await client.connect();
     console.log("Connected to MongoDB Atlas");
 
-    const db = client.db("schoolDB"); // Creates a reference to a database
-    const students = db.collection("students"); // Creates reference to a collection
+    const db = client.db("schoolDB"); 
+    const students = db.collection("students"); 
 
     await db.createCollection("teachers");
     console.log("'teachers' collection created in 'schoolDB'");
